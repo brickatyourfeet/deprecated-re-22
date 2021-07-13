@@ -4,9 +4,6 @@ import { makeStyles, useTheme } from '@material-ui/styles'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 
-import logo from '../../assets/rainierelixirswidewhite2.svg'
-
-
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -302,7 +299,7 @@ export default function Header(props){
             onClick={()=> props.setValue(0)}
             // disableRipple  //can disable ripple on click 
           >
-            <img className={classes.logo} src={logo} alt="rainier elixirs logo" />
+            <img className={classes.logo} src="/assets/rainierelixirswidewhite2.svg" alt="rainier elixirs logo" />
           </Button>
             {matches ? drawer : tabs}
           </Toolbar>

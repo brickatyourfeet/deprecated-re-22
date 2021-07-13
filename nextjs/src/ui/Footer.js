@@ -4,13 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 
-import footerAdornment from "../../assets/Footer Adornment.svg";
-import facebook from "../../assets/facebook.svg";
-import twitter from "../../assets/twitter.svg";
-import instagram from "../../assets/instagram.svg";
-import etsy from "../../assets/etsy.svg";
-//will need to add newer etsy vector of same size
-
 const useStyles = makeStyles(theme => ({
   footer: {
     backgroundColor: theme.palette.common.teal,
@@ -220,7 +213,7 @@ export default function Footer(props) {
 
       <img
         alt="black footer slash"
-        src={footerAdornment}
+        src="/assets/footerAdornment.svg"
         className={classes.adornment}
       />
 
@@ -237,17 +230,29 @@ export default function Footer(props) {
           rel="noopener noreferrer"
           target="_blank" 
         >
-          <img alt="etsy logo" src={etsy} className={classes.icon} />
+          <img alt="etsy logo" src="/assets/etsy.svg" className={classes.icon} />
         </Grid>
+        {/*will need to add newer etsy vector of same/similar size */}
 {/*
         <Grid
           item
           component={"a"}
-          href="https://www.twitter.com/"
+          href="https://www.twitter.com/rainierelixirs"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img alt="twitter logo" src={twitter} className={classes.icon} />
+          <img alt="twitter logo" src="/assets/twitter.svg" className={classes.icon} />
+        </Grid>
+*/}
+{/*
+        <Grid
+          item
+          component={"a"}
+          href="https://www.facebook.com/rainierelixirs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img alt="facebook logo" src="/assets/facebook.svg" className={classes.icon} />
         </Grid>
 */}
         <Grid
@@ -257,7 +262,7 @@ export default function Footer(props) {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img alt="instagram logo" src={instagram} className={classes.icon} />
+          <img alt="instagram logo" src="/assets/instagram.svg" className={classes.icon} />
         </Grid>
       </Grid>
     </footer>

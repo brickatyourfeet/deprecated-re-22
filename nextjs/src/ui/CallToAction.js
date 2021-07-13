@@ -5,20 +5,20 @@ import ButtonArrow from "./ButtonArrow";
 import { Link, useLocation} from "react-router-dom";
 import _ from 'lodash'
 
-import background0 from "../../assets/ctabg0.jpg";
-import background1 from "../../assets/ctabg1.jpg";
-import background2 from "../../assets/ctabg2.jpg";
-import background3 from "../../assets/ctabg3.jpg";
-import services from "../../assets/1336599.jpg";
-import service1 from "../../assets/1336599.jpg";
-import service2 from "../../assets/1336599.jpg";
-import service3 from "../../assets/1336599.jpg";
-import landing from "../../assets/tempmobile.jpg";
-import herbz from "../../assets/berrybasket.png";
-import about from "../../assets/1336599.jpg";
-import contact from "../../assets/1336599.jpg";
-import consultation from "../../assets/1336599.jpg";
-import mobileBackground from "../../assets/tempmobile.jpg";
+// import background0 from "../../assets/ctabg0.jpg";
+// import background1 from "../../assets/ctabg1.jpg";
+// import background2 from "../../assets/ctabg2.jpg";
+// import background3 from "../../assets/ctabg3.jpg";
+// import services from "../../assets/1336599.jpg";
+// import service1 from "../../assets/1336599.jpg";
+// import service2 from "../../assets/1336599.jpg";
+// import service3 from "../../assets/1336599.jpg";
+// import landing from "../../assets/tempmobile.jpg";
+// import herbz from "../../assets/berrybasket.png";
+// import about from "../../assets/1336599.jpg";
+// import contact from "../../assets/1336599.jpg";
+// import consultation from "../../assets/1336599.jpg";
+// import mobileBackground from "../../assets/tempmobile.jpg";
 
 
 //could do other or random ways for CTA background:
@@ -30,7 +30,7 @@ import mobileBackground from "../../assets/tempmobile.jpg";
 
 const doTheBackground = () => {
   //const backgroundEnum = Object.freeze({service1, service2, service3, landing})
-  const bgs = [background0, background1, background2, background3]
+  const bgs = ["/assets/background0.jpg", "/assets/background1.jpg", "/assets/background2.jpg", "/assets/background3.jpg"]
   console.log(bgs)
   console.log('service 1 ? ' + bgs[0])
   const rando = _.random(0, bgs.length - 1)
@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
     height: "60em",
     width: "100%",
     [theme.breakpoints.down("md")]: {
-      backgroundImage: `url(${mobileBackground})`,
+      backgroundImage: `url("/assets/tempmobile.jpg")`, //removing backticks here causes no url defined error
       backgroundAttachment: "inherit" //this will get rid of parallax (static) bg
     }
   },
@@ -99,7 +99,7 @@ export default function CallToAction(props) {
       direction={matchesSM ? "column" : "row"}
       style={{
         //backgroundImage: `url(${background0})`
-        backgroundImage: `${doTheBackground()}` //this works, but should be done differently 
+        backgroundImage: `${doTheBackground()}` //check this after next - refactor later anyway
       }}
     >
       <Grid
