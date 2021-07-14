@@ -6,11 +6,11 @@ import ButtonArrow from "../src/ui/ButtonArrow";
 
 import CallToAction from "../src/ui/CallToAction";
 
-import service1Icon from "../assets/tincture.svg";
-import service2Icon from "../assets/tea-bag.svg";
-import service3Icon from "../assets/green-tea.svg";
-import herbzBackground from "../assets/hexlight.svg";
-import infoBackground from "../assets/hexblur1.svg";
+// import service1Icon from "../assets/tincture.svg";
+// import service2Icon from "../assets/tea-bag.svg";
+// import service3Icon from "../assets/green-tea.svg";
+// import herbzBackground from "../assets/hexlight.svg";
+// import infoBackground from "../assets/hexblur1.svg";
 
 const useStyles = makeStyles(theme => ({
   animation: {   //can use lottie or a gif, or just an image/svg
