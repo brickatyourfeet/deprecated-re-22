@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {AppBar, Toolbar, useScrollTrigger, Typography, SwipeableDrawer, Tabs, Tab, Button, Menu, MenuItem, useMediaQuery, IconButton, List, ListItem, ListItemText} from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/styles'
-import { Link } from 'react-router-dom'
+import Link from "../Link";
 import MenuIcon from '@material-ui/icons/Menu'
 
 
@@ -202,7 +202,7 @@ export default function Header(props){
             key={`${route}${index}`}
             className={classes.tab} 
             component={Link} 
-            to={route.link} 
+            href={route.link} 
             label={route.name}
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
@@ -211,7 +211,7 @@ export default function Header(props){
         ))}
       </Tabs>
       
-      <Button component={Link} to='/consultation' onClick={() => props.setValue(5)} variant='contained' color='secondary' className={classes.button}>
+      <Button component={Link} href='/consultation' onClick={() => props.setValue(5)} variant='contained' color='secondary' className={classes.button}>
       Schedule a Consultation?
       </Button>
       <Menu 
@@ -229,7 +229,7 @@ export default function Header(props){
         <MenuItem 
           key={`${option}${index}`}
           component={Link} 
-          to={option.link} 
+          href={option.link} 
           classes={{root: classes.menuItem}} 
           onClick={(event) => {
             handleMenuItemClick(event, index); props.setValue(1); handleClose()
@@ -261,7 +261,7 @@ export default function Header(props){
             divider 
             button 
             component={Link} 
-            to={route.link} 
+            href={route.link} 
             onClick={() => {setDrawerOpen(false); props.setValue(route.activeIndex)}}
             selected={props.value === route.activeIndex}
             classes={{selected: classes.drawerItemSelected}}
@@ -274,7 +274,7 @@ export default function Header(props){
             </ListItemText>
           </ListItem>
         ))}
-        <ListItem selected={props.value===5} classes={{root: classes.drawerItemConsultation, selected: classes.drawerItemSelected}} onClick={()=> {setDrawerOpen(false); props.setValue(5)}} divider button component={Link} to='/consultation'>
+        <ListItem selected={props.value===5} classes={{root: classes.drawerItemConsultation, selected: classes.drawerItemSelected}} onClick={()=> {setDrawerOpen(false); props.setValue(5)}} divider button component={Link} href='/consultation'>
           <ListItemText className={classes.drawerItem} disableTypography>Schedule Consultation</ListItemText>
         </ListItem>
        </List>
@@ -294,7 +294,7 @@ export default function Header(props){
           <Toolbar>
           <Button 
             component={Link} 
-            to='/' 
+            href='/' 
             className={classes.logoContainer} 
             onClick={()=> props.setValue(0)}
             // disableRipple  //can disable ripple on click 

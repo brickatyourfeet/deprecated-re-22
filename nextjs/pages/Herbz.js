@@ -184,7 +184,7 @@ export default function Herbz(props) {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item container justify={matchesMD ? "center" : "flex-end"} lg>
+        <Grid item container justifyContent={matchesMD ? "center" : "flex-end"} lg>
           <img
           src="/assets/herbs.svg"
           alt="imgalt"
@@ -202,7 +202,7 @@ export default function Herbz(props) {
         item
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         className={classes.rowContainer}
       >
         <Grid item>
@@ -216,7 +216,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#60807d", height: "90em" }}
       >
         <Grid
@@ -278,7 +278,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#607580", height: "90em" }}
       >
         <Grid
@@ -339,7 +339,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#606280", height: "90em" }}
       >
         <Grid
@@ -395,7 +395,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#726080", height: "90em" }}
       >
         <Grid
@@ -448,7 +448,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#608070", height: "90em" }}
       >
         <Grid
@@ -496,7 +496,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#607580", height: "90em" }}
       >
         <Grid
@@ -573,7 +573,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#606280", height: "90em" }}
       >
         <Grid
@@ -634,7 +634,7 @@ export default function Herbz(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         style={{ backgroundColor: "#726080", height: "90em" }}
       >
         <Grid
@@ -694,7 +694,7 @@ export default function Herbz(props) {
         item
         container
         direction={matchesMD ? "column" : "row"}
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         className={classes.rowContainer}
         style={{ backgroundColor: "#60807d", height: "90em" }}
       >

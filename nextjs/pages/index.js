@@ -132,7 +132,7 @@ export default function Landing(props) {
       <Grid item>
         {" "}
         {/*-----Hero-----*/}
-        <Grid container justify="flex-end" alignItems="center" direction="row">
+        <Grid container justifyContent="flex-end" alignItems="center" direction="row">
           <Grid sm item className={classes.heroTextContainer}>
             <Typography variant="h2" align="center">
               Line 1 is longer than line 2 maybe?
@@ -141,7 +141,7 @@ export default function Landing(props) {
             </Typography>
             <Grid
               container
-              justify="center"
+              justifyContent="center"
               className={classes.buttonContainer}
             >
               <Grid item>
@@ -193,7 +193,7 @@ export default function Landing(props) {
         <Grid
           container
           direction="row" 
-          justify={matchesSM ? "center" : undefined} 
+          justifyContent={matchesSM ? "center" : undefined} 
           className={classes.serviceContainer}
         >
           <Grid
@@ -245,7 +245,7 @@ export default function Landing(props) {
         <Grid
           container
           direction="row"
-          justify={matchesSM ? "center" : "flex-end"}
+          justifyContent={matchesSM ? "center" : "flex-end"}
           className={classes.serviceContainer}
         >
           <Grid
@@ -295,7 +295,7 @@ export default function Landing(props) {
         <Grid
           container
           direction="row"
-          justify={matchesSM ? "center" : undefined}
+          justifyContent={matchesSM ? "center" : undefined}
           className={classes.serviceContainer}
         >
           <Grid
@@ -345,7 +345,7 @@ export default function Landing(props) {
           container
           style={{ height: "100em", marginTop: "12em" }}
           alignItems="center"
-          justify="center"
+          justifyContent="center"
         >
           {/*-----Card content is the top portion, actions is the buttons etc-----*/}
           <Card className={classes.herbzCard}>

@@ -42,7 +42,7 @@ export default function Service1(props) {
         item
         container
         direction="row"
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         className={classes.rowContainer}
         style={{ marginTop: matchesXS ? "1em" : "2em" }}
       >
@@ -121,7 +121,7 @@ export default function Service1(props) {
         item
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         style={{ marginTop: "15em", marginBottom: "20em" }}
         className={classes.rowContainer}
       >
@@ -180,7 +180,7 @@ export default function Service1(props) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify="space-between"
+        justifyContent="space-between"
         className={classes.rowContainer}
       >
         <Grid
@@ -287,7 +287,7 @@ export default function Service1(props) {
         container
         alignItems={matchesMD ? "center" : undefined}
         direction={matchesMD ? "column" : "row"}
-        justify="space-between"
+        justifyContent="space-between"
         style={{ marginBottom: "18em" }} //may want to change up the marginBottom
         className={classes.rowContainer}
       >

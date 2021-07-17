@@ -2,8 +2,9 @@ import React, {useEffect} from "react";
 import {Typography, Button, useMediaQuery, Grid} from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import ButtonArrow from "./ButtonArrow";
-import { Link, useLocation} from "react-router-dom";
-import _ from 'lodash'
+import {useLocation} from "react-router-dom";
+import Link from "../Link";
+import _ from 'lodash';
 
 // import background0 from "../../assets/ctabg0.jpg";
 // import background1 from "../../assets/ctabg1.jpg";
@@ -94,7 +95,7 @@ export default function CallToAction(props) {
     <Grid
       container
       alignItems="center"
-      justify={matchesSM ? "center" : "space-between"}
+      justifyContent={matchesSM ? "center" : "space-between"}
       className={classes.background}
       direction={matchesSM ? "column" : "row"}
       style={{
@@ -119,10 +120,10 @@ export default function CallToAction(props) {
             <Typography variant="subtitle2" style={{ fontSize: "1.5rem" }}>
               Some more words
             </Typography>
-            <Grid container justify={matchesSM ? "center" : undefined} item>
+            <Grid container justifyContent={matchesSM ? "center" : undefined} item>
               <Button
                 component={Link}
-                to="/herbz"
+                href="/herbz"
                 variant="outlined"
                 className={classes.learnButton}
                 onClick={() => props.setValue(2)}
@@ -141,7 +142,7 @@ export default function CallToAction(props) {
       <Grid item>
         <Button
           component={Link}
-          to="/consultation"
+          href="/consultation"
           variant="contained"
           className={classes.consultationButton}
           onClick={() => props.setValue(5)}

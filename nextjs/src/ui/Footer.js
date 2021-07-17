@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "../Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
@@ -58,14 +58,14 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer}>
       <Hidden mdDown>
-        <Grid container justify="center" className={classes.mainContainer}>
+        <Grid container justifyContent="center" className={classes.mainContainer}>
           <Grid item className={classes.gridItem}>
             <Grid container direction="column" spacing={2}>
               <Grid
                 item
                 component={Link}
                 onClick={() => props.setValue(0)}
-                to="/"
+                href="/"
                 className={classes.link}
               >
                 Home
@@ -81,7 +81,7 @@ export default function Footer(props) {
                   props.setValue(1);
                   props.setSelectedIndex(0);
                 }}
-                to="/services"
+                href="/services"
                 className={classes.link}
               >
                 Services
@@ -89,7 +89,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/service1"
+                href="/service1"
                 className={classes.link}
                 onClick={() => {
                   props.setValue(1);
@@ -101,7 +101,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/service2"
+                href="/service2"
                 className={classes.link}
                 onClick={() => {
                   props.setValue(1);
@@ -117,7 +117,7 @@ export default function Footer(props) {
                   props.setValue(1);
                   props.setSelectedIndex(3);
                 }}
-                to="/service3"
+                href="/service3"
                 className={classes.link}
               >
                 Service 3
@@ -129,7 +129,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/herbz"
+                href="/herbz"
                 className={classes.link}
                 onClick={() => props.setValue(2)}
               >
@@ -138,7 +138,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/herbz"
+                href="/herbz"
                 className={classes.link}
                 onClick={() => props.setValue(2)}
               >
@@ -147,7 +147,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/herbz"
+                href="/herbz"
                 className={classes.link}
                 onClick={() => props.setValue(2)}
               >
@@ -156,7 +156,7 @@ export default function Footer(props) {
               <Grid
                 item
                 component={Link}
-                to="/herbz"
+                href="/herbz"
                 className={classes.link}
                 onClick={() => props.setValue(2)}
               >
@@ -170,7 +170,7 @@ export default function Footer(props) {
                 item
                 component={Link}
                 onClick={() => props.setValue(3)}
-                to="/about"
+                href="/about"
                 className={classes.link}
               >
                 About
@@ -179,7 +179,7 @@ export default function Footer(props) {
                 item
                 component={Link}
                 onClick={() => props.setValue(3)}
-                to="/about"
+                href="/about"
                 className={classes.link}
               >
                 About 2?
@@ -188,7 +188,7 @@ export default function Footer(props) {
                 item
                 component={Link}
                 onClick={() => props.setValue(3)}
-                to="/about"
+                href="/about"
                 className={classes.link}
               >
                 About 3?
@@ -201,7 +201,7 @@ export default function Footer(props) {
                 item
                 component={Link}
                 onClick={() => props.setValue(4)}
-                to="/contact"
+                href="/contact"
                 className={classes.link}
               >
                 Contact Us
@@ -219,7 +219,7 @@ export default function Footer(props) {
 
       <Grid
         container
-        justify="flex-end"
+        justifyContent="flex-end"
         spacing={2}
         className={classes.socialContainer}
       >

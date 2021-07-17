@@ -161,7 +161,7 @@ export default function Contact(props) {
         item
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         style={{
           marginBottom: matchesMD ? "5em" : 0,
@@ -279,7 +279,7 @@ export default function Contact(props) {
                 onChange={event => setMessage(event.target.value)}
               />
             </Grid>
-            <Grid item container justify="center" style={{ marginTop: "2em" }}>
+            <Grid item container justifyContent="center" style={{ marginTop: "2em" }}>
               <Button
                 disabled={
                   name.length === 0 ||
@@ -421,7 +421,7 @@ export default function Contact(props) {
         direction={matchesMD ? "column" : "row"}
         className={classes.background}
         alignItems="center"
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         lg={8} //background image takes up more of the screen (offcentered) on larger screens
         xl={9}
       >
@@ -446,7 +446,7 @@ export default function Contact(props) {
               >
                 Get 'em in your body.'
               </Typography>
-              <Grid container justify={matchesMD ? "center" : undefined} item>
+              <Grid container justifyContent={matchesMD ? "center" : undefined} item>
                 <Button
                   component={Link}
                   href="/herbz"

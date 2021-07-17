@@ -911,7 +911,7 @@ export default function Consultation() {
         <Grid
           item
           container //container outside of just item because container is 100% of the space, and can align items within
-          justify="space-between"
+          justifyContent="space-between"
           style={{ width: "18em", marginTop: "3em" }}
         >
           <Grid item>
@@ -963,7 +963,7 @@ export default function Consultation() {
         style={{ zIndex: 1302 }}
         fullScreen={matchesSM}
       >
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item style={{ marginTop: "1em" }}>
             <Typography variant="h2" align="center">
               Consultation
@@ -973,7 +973,7 @@ export default function Consultation() {
         <DialogContent>
           <Grid
             container
-            justify="space-around"
+            justifyContent="space-around"
             direction={matchesSM ? "column" : "row"}
             alignItems={matchesSM ? "center" : undefined}
           >

@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
 
@@ -6,7 +6,7 @@ const customTeal = "#03F9EA"
 const customRed = "#8E2B0E" 
 const customGrey = "b3b3cc"
 
-export default createMuiTheme({
+export default createTheme({
   palette: { //add more color options in the palette
     common: {
       teal: customTeal,
