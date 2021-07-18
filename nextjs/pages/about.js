@@ -51,7 +51,7 @@ export default function About(props) {
       <Grid
         item
         container
-        justify="center"
+        justifyContent="center"
         className={classes.rowContainer}
         style={{ marginTop: "3em" }}
       >
@@ -70,7 +70,7 @@ export default function About(props) {
         style={{ marginTop: "10em", marginBottom: "10em" }}
         direction={matchesMD ? "column" : "row"}
         alignItems={matchesMD ? "center" : undefined}
-        justify="space-between"
+        justifyContent="space-between"
       >
         <Grid item>
           <Grid
@@ -137,7 +137,7 @@ export default function About(props) {
           </Grid>
         </Grid>
         <Grid item>
-          <Grid item container justify="center" lg>
+          <Grid item container justifyContent="center" lg>
             <img
               src="/assets/herbs.svg"
               alt="imagalt"
@@ -171,7 +171,7 @@ export default function About(props) {
           <Avatar alt="avatar" src="/assets/herbs.svg" className={classes.avatar} />
         </Grid>
         {/** 3 item container below avatar for other potential ideas **/}
-        <Grid item container justify={matchesMD ? "center" : undefined}>
+        <Grid item container justifyContent={matchesMD ? "center" : undefined}>
           <Hidden lgUp> {/** hidden on large screens **/}
             <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
               <Typography variant="body1" align="center" paragraph>

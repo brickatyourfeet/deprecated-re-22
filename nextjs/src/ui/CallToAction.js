@@ -29,11 +29,16 @@ import _ from 'lodash';
 //const location = window.location.pathname.slice(1) !== '' || !backgroundEnum.hasOwnProperty(window.location.pathname.slice(1)) ? window.location.pathname.slice(1) : landing
 //const location = useLocation()
 
+import background0 from "../../public/assets/ctabg0.jpg";
+import background1 from "/assets/ctabg1.jpg";
+import background2 from "/assets/ctabg2.jpg";
+import background3 from "/assets/ctabg3.jpg";
+
 const doTheBackground = () => {
   //const backgroundEnum = Object.freeze({service1, service2, service3, landing})
-  const bgs = ["/assets/background0.jpg", "/assets/background1.jpg", "/assets/background2.jpg", "/assets/background3.jpg"]
+  const bgs = [background0, background1, background2, background3]
   console.log(bgs)
-  console.log('service 1 ? ' + bgs[0])
+  console.log('should be background 0: ' + bgs[0])
   const rando = _.random(0, bgs.length - 1)
   console.log('rando = ' + rando)
 
@@ -41,6 +46,8 @@ const doTheBackground = () => {
   console.log(currentBg)
   return `url(${currentBg})`
 }
+
+//backgroundImage: `url("/assets/hexblur1.svg")`,
 
 const useStyles = makeStyles(theme => ({
   learnButton: {
@@ -61,7 +68,7 @@ const useStyles = makeStyles(theme => ({
     height: "60em",
     width: "100%",
     [theme.breakpoints.down("md")]: {
-      backgroundImage: `url("/assets/tempmobile.jpg")`, //removing backticks here causes no url defined error
+      backgroundImage: `url("/assets/tempmobile.jpg")`,
       backgroundAttachment: "inherit" //this will get rid of parallax (static) bg
     }
   },
@@ -100,7 +107,8 @@ export default function CallToAction(props) {
       direction={matchesSM ? "column" : "row"}
       style={{
         //backgroundImage: `url(${background0})`
-        backgroundImage: `${doTheBackground()}` //check this after next - refactor later anyway
+        //backgroundImage: `${doTheBackground()}` //check this after next - refactor later anyway
+        backgroundImage: `url(/assets/hexblur1.svg")`
       }}
     >
       <Grid
