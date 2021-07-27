@@ -3,8 +3,6 @@ import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {Grid, IconButton, Typography, useMediaQuery, Hidden} from "@material-ui/core/";
 
-import tempSvg from '../assets/herbs.svg'
-
 import CallToAction from "../src/ui/CallToAction";
 
 const useStyles = makeStyles(theme => ({
