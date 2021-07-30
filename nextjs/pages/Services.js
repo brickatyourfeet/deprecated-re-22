@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import Head from "next/head"
 import ButtonArrow from "../src/ui/ButtonArrow";
 //import service1Icon from "../assets/tincture.svg";
 //import service2Icon from "../assets/tea-bag.svg";
@@ -50,6 +50,11 @@ export default function Services(props) {
 
   return (
     <Grid container direction="column">
+    <Head>
+      <title key="title">
+        Rainier Elixirs | Herb Tincture Medicinal Metallica
+      </title>
+    </Head>
       <Grid
         item
         style={{

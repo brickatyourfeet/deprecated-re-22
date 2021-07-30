@@ -2,7 +2,7 @@ import React from "react";
 import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {Grid, IconButton, Typography, useMediaQuery, Hidden} from "@material-ui/core/";
-
+import Head from "next/head"
 import CallToAction from "../src/ui/CallToAction";
 
 const useStyles = makeStyles(theme => ({
@@ -36,6 +36,11 @@ export default function Service1(props) {
 
   return (
     <Grid container direction="column">
+    <Head>
+      <title key="title">
+        Rainier Elixirs | Service 1
+      </title>
+    </Head>
       <Grid
         item
         container

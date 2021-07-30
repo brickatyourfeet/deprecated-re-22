@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {AppBar, Toolbar, useScrollTrigger, Typography, SwipeableDrawer, Tabs, Tab, Button, Menu, MenuItem, useMediaQuery, IconButton, List, ListItem, ListItemText} from '@material-ui/core'
+import {AppBar, Toolbar, useScrollTrigger, Hidden, Typography, SwipeableDrawer, Tabs, Tab, Button, Menu, MenuItem, useMediaQuery, IconButton, List, ListItem, ListItemText} from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/styles'
 import Link from "../Link";
 import MenuIcon from '@material-ui/icons/Menu';
@@ -178,7 +178,7 @@ export default function Header(props){
           }
           break;
         case '/consultation': {
-          props.setValue(5);
+          if(props.value !== 5) props.setValue(5)
           break;
         }
         default:
@@ -301,7 +301,12 @@ export default function Header(props){
           >
             <img className={classes.logo} src="/assets/rainierelixirswidewhite2.svg" alt="rainier elixirs logo" />
           </Button>
-            {matches ? drawer : tabs}
+          <Hidden mdDown>
+            {tabs}
+          </Hidden>
+          <Hidden lgUp>
+            {drawer}
+          </Hidden>
           </Toolbar>
         </AppBar>
       </ElevationScroll>

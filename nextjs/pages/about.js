@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {Grid, Typography, Avatar, useMediaQuery, Hidden} from "@material-ui/core";
+import Head from "next/head";
+
 
 import CallToAction from "../src/ui/CallToAction";
 
@@ -39,6 +41,11 @@ export default function About(props) {
 
   return (
     <Grid container direction="column">
+    <Head>
+      <title key="title">
+        About Rainier Elixirs - Wildcraft local organic 60 characters
+      </title>
+    </Head>
       <Grid
         item
         className={classes.rowContainer}

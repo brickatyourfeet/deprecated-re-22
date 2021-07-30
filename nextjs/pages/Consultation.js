@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { cloneDeep } from "lodash";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-
+import Head from "next/head"
 import {Grid, Typography, Button, Snackbar, CircularProgress, Hidden, useMediaQuery, TextField, DialogContent, Dialog, IconButton, } from "@material-ui/core";
 
 //import check from "../assets/check.svg";
@@ -793,6 +793,11 @@ export default function Consultation() {
 
   return (
     <Grid container direction="row">  {/** row is default, this is just more explicit */}
+    <Head>
+      <title key="title">
+        Rainier Elixirs | Consultation Estimate Custom
+      </title>
+    </Head>
       <Grid
         item
         container

@@ -3,7 +3,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Link from "../src/Link";
 import {Grid, Button, Typography, useMediaQuery, Card, CardContent, CardMedia}  from "@material-ui/core";
 import ButtonArrow from "../src/ui/ButtonArrow";
-
+import Head from "next/head"
 import CallToAction from "../src/ui/CallToAction";
 
 // import service1Icon from "../assets/tincture.svg";
@@ -129,6 +129,11 @@ export default function Landing(props) {
 
   return (
     <Grid container direction="column" className={classes.mainContainer}>
+    <Head>
+      <title key="title">
+        MAKE THIS TITLE TAG COUNT
+      </title>
+    </Head>
       <Grid item>
         {" "}
         {/*-----Hero-----*/}

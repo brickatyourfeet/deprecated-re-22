@@ -3,7 +3,7 @@ import axios from "axios";
 import Link from "../src/Link"
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {Grid, Typography, Button, TextField, useMediaQuery, Dialog, DialogContent, CircularProgress, Snackbar} from "@material-ui/core";
-
+import Head from "next/head";
 import ButtonArrow from "../src/ui/ButtonArrow";
 
 //import background from "../assets/ctabg0.jpg";
@@ -157,6 +157,11 @@ export default function Contact(props) {
 
   return (
     <Grid container direction="row">
+    <Head>
+      <title key="title">
+        Contact Rainier Elixirs | Send an Email
+      </title>
+    </Head>
       <Grid
         item
         container

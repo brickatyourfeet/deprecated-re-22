@@ -2,7 +2,7 @@ import React from "react";
 import Link from "../src/Link";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {IconButton, Grid, Typography, useMediaQuery, Hidden} from "@material-ui/core";
-
+import Head from "next/head"
 // import forwardArrow from "../assets/forwardArrow.svg";
 // import backArrow from "../assets/backArrow.svg";
 // import service1Icon from "../assets/tincture.svg";
@@ -36,6 +36,11 @@ export default function Service2(props) {
 
   return (
     <Grid container direction="column">
+    <Head>
+      <title key="title">
+        Rainier Elixirs | Service 2
+      </title>
+    </Head>
       <Grid
         item
         container
