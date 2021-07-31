@@ -39,6 +39,8 @@ export default function Herbz(props) {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
         //this one is super important above - work on it
       />
+      <meta property="og:title" content="HERBZ SOCIAL Put a blurb about rainier elixirs here" key="og:title" />
+      <meta property="og:url" content="rainierelixirs.com/herbz" />
     </Head>
       {/* <JuicerFeed crossorigin feedId={rainierFeed} style={{}} data-filter="Instagram, Tumblr"/> */}
       <JuicerFeed feedId={rainierFeed} />

@@ -11,6 +11,13 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/assets/favicon-16x16.png" />
           {/* PWA primary color */}
           <meta name="theme-color" content={Theme.palette.primary.main} />
+          {/* image for open graph social media sharing */}
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://photos.app.goo.gl/DDpj2DcMfoWhhXZT7" />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="Rainier Elixirs Link Photo" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Courgette:100,400,400i,700|Roboto:300,400,500,700&display=swap"

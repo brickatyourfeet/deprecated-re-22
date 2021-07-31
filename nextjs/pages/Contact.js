@@ -165,6 +165,8 @@ export default function Contact(props) {
         Wildcrafted locally sourced tincture organic 
         northwest essential herbs not oils Send us a message we will heal your ailments pantera"
       />
+      <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
+      <meta property="og:url" content="rainierelixirs.com/contact" />
     </Head>
       <Grid
         item

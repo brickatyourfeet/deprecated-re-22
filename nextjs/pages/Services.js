@@ -58,6 +58,8 @@ export default function Services(props) {
         Wildcrafted locally sourced tincture organic 
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
+      <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
+      <meta property="og:url" content="rainierelixirs.com/services" />
     </Head>
       <Grid
         item
