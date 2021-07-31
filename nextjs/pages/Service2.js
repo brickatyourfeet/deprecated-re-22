@@ -40,6 +40,10 @@ export default function Service2(props) {
       <title key="title">
         Rainier Elixirs | Service 2
       </title>
+      <meta name="description" key="description" content="Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils teeth and plaque conspiracy and metallica"
+      />
     </Head>
       <Grid
         item

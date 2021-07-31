@@ -45,6 +45,10 @@ export default function About(props) {
       <title key="title">
         About Rainier Elixirs - Wildcraft local organic 60 characters
       </title>
+      <meta name="description" key="description" content="Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils teeth and plaque conspiracy and metallica"
+      />
     </Head>
       <Grid
         item

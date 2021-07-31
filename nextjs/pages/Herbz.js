@@ -33,7 +33,12 @@ export default function Herbz(props) {
     <Head>
       <title key="title">
         Rainier Elixirs | Social Media Tinctures Herbs Medicinal
-      </title>
+      </title> 
+      <meta name="description" key="description" content="Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils teeth and plaque conspiracy and metallica"
+        //this one is super important above - work on it
+      />
     </Head>
       {/* <JuicerFeed crossorigin feedId={rainierFeed} style={{}} data-filter="Instagram, Tumblr"/> */}
       <JuicerFeed feedId={rainierFeed} />

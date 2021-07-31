@@ -161,6 +161,10 @@ export default function Contact(props) {
       <title key="title">
         Contact Rainier Elixirs | Send an Email
       </title>
+      <meta name="description" key="description" content="Contact Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils Send us a message we will heal your ailments pantera"
+      />
     </Head>
       <Grid
         item

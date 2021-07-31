@@ -54,6 +54,10 @@ export default function Services(props) {
       <title key="title">
         Rainier Elixirs | Herb Tincture Medicinal Metallica
       </title>
+      <meta name="description" key="description" content="Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils teeth and plaque conspiracy and metallica"
+      />
     </Head>
       <Grid
         item

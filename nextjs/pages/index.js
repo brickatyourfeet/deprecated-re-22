@@ -131,8 +131,12 @@ export default function Landing(props) {
     <Grid container direction="column" className={classes.mainContainer}>
     <Head>
       <title key="title">
-        MAKE THIS TITLE TAG COUNT
+        MAKE THIS TITLE TAG COUNT -- also the meta
       </title>
+      <meta name="description" key="description" content="Rainier Elixirs | 
+        Wildcrafted locally sourced tincture organic 
+        northwest essential herbs not oils teeth and plaque conspiracy and metallica"
+      />
     </Head>
       <Grid item>
         {" "}
