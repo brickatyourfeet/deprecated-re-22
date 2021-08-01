@@ -194,7 +194,7 @@ export default function Service2(props) {
         container
         direction={matchesMD ? "column" : "row"}
         className={classes.rowContainer}
-        style={{ marginBottom: "15em" }}
+        style={{ marginBottom: "15em", display: "grid" }}
       >
         <Grid item container direction="column" alignItems="center" md>
           <Grid item>
@@ -226,7 +226,9 @@ export default function Service2(props) {
             <img
               src="/assets/tincture.svg"
               alt="imagalt"
-              style={{ maxWidth: matchesXS ? "20em" : "28em" }}
+              style={{ maxWidth: matchesMD ? "15em" : "20em", 
+                       height: matchesMD ? "20em" : undefined
+               }}  //double check these
             />
           </Grid>
         </Grid>
