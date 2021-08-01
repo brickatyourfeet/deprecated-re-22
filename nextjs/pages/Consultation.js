@@ -802,7 +802,8 @@ export default function Consultation() {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/consultation" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/consultation" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/consultation" /> 
     </Head>
       <Grid
         item
@@ -816,8 +817,8 @@ export default function Consultation() {
           item
           style={{ marginTop: "2em",  }} //marginLeft: matchesMD ? 0 : "5em"
         >
-          {/* <Typography variant="h2" align={matchesMD ? "center" : undefined}> */}
-          <Typography variant="h2" align="center">
+          {/* <Typography variant="h1" align={matchesMD ? "center" : undefined}> */}
+          <Typography variant="h1" align="center">
             Consultation
           </Typography>
         </Grid>
@@ -847,7 +848,7 @@ export default function Consultation() {
               <Grid item>
                 <Typography
                   align="center"
-                  variant="h2"
+                  variant="h1"
                   style={{
                     fontWeight: 500,
                     fontSize: "2.25rem",
@@ -976,7 +977,7 @@ export default function Consultation() {
       >
         <Grid container justifyContent="center">
           <Grid item style={{ marginTop: "1em" }}>
-            <Typography variant="h2" align="center">
+            <Typography variant="h1" align="center">
               Consultation
             </Typography>
           </Grid>

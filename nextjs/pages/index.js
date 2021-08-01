@@ -138,14 +138,14 @@ export default function Landing(props) {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com" />
     </Head>
       <Grid item>
         {" "}
         {/*-----Hero-----*/}
         <Grid container justifyContent="flex-end" alignItems="center" direction="row">
           <Grid sm item className={classes.heroTextContainer}>
-            <Typography variant="h2" align="center">
+            <Typography variant="h1" align="center">
               Line 1 is longer than line 2 maybe?
               <br />
               Line 2
@@ -424,7 +424,7 @@ export default function Landing(props) {
                 style={{ marginBottom: matchesXS ? "10em" : 0 }}
                 direction="column"
               >
-                <Typography variant="h2" style={{ color: "black" }}>
+                <Typography variant="h1" style={{ color: "black" }}>
                   About
                 </Typography>
                 <Typography style={{ color: "black", borderColor: "black" }} variant="subtitle2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, consequatur. Quis ratione provident quos, recusandae assumenda vel ipsum reprehenderit error rerum eum officiis. Incidunt explicabo impedit dolorum alias iusto? Culpa.</Typography>
@@ -452,7 +452,7 @@ export default function Landing(props) {
               }}
             >
               <Grid container direction="column">
-                <Typography variant="h2" style={{ color: "white" }}>
+                <Typography variant="h1" style={{ color: "white" }}>
                   Contact
                 </Typography>
                 <Typography variant="subtitle2">

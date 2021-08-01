@@ -33,7 +33,7 @@ export default createTheme({
       textTransform: 'none',
       // color: ""
     },
-    h2: {
+    h1: {
       fontFamily: "Helvetica Neue",
       fontWeight: 700,
       fontSize: "2.5rem",

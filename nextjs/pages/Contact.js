@@ -166,7 +166,8 @@ export default function Contact(props) {
         northwest essential herbs not oils Send us a message we will heal your ailments pantera"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/contact" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/contact" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/contact" /> 
     </Head>
       <Grid
         item
@@ -186,7 +187,7 @@ export default function Contact(props) {
             <Grid item>
               <Typography
                 align={matchesMD ? "center" : undefined}
-                variant="h2"
+                variant="h1"
                 style={{ lineHeight: 1 }}
               >
                 Contact Us
@@ -445,7 +446,7 @@ export default function Contact(props) {
         > 
           <Grid container direction="column">
             <Grid item>
-              <Typography align={matchesMD ? "center" : undefined} variant="h2">
+              <Typography align={matchesMD ? "center" : undefined} variant="h1">
                 Rainier
                 <br />
                 Elixirs

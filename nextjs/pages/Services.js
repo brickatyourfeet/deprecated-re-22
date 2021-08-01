@@ -59,7 +59,8 @@ export default function Services(props) {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/services" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/services" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/services" /> 
     </Head>
       <Grid
         item
@@ -70,7 +71,7 @@ export default function Services(props) {
       >
         <Typography
           align={matchesSM ? "center" : undefined}
-          variant="h2"
+          variant="h1"
           gutterBottom
         >
           Services

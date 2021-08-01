@@ -40,7 +40,8 @@ export default function Herbz(props) {
         //this one is super important above - work on it
       />
       <meta property="og:title" content="HERBZ SOCIAL Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/herbz" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/herbz" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/herbz" /> 
     </Head>
       {/* <JuicerFeed crossorigin feedId={rainierFeed} style={{}} data-filter="Instagram, Tumblr"/> */}
       <JuicerFeed feedId={rainierFeed} />
@@ -52,7 +53,7 @@ export default function Herbz(props) {
       >
         <Typography
           align={matchesMD ? "center" : undefined}
-          variant="h2"
+          variant="h1"
           style={{ fontFamily: "Pacifico" }}
         >
           HERBS!

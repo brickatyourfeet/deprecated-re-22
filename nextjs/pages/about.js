@@ -50,14 +50,15 @@ export default function About(props) {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/about" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/about" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/about" />  
     </Head>
       <Grid
         item
         className={classes.rowContainer}
         style={{ marginTop: matchesMD ? "1em" : "2em" }}
       >
-        <Typography align={matchesMD ? "center" : undefined} variant="h2">
+        <Typography align={matchesMD ? "center" : undefined} variant="h1">
           About
         </Typography>
       </Grid>

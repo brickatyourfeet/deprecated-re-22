@@ -45,7 +45,8 @@ export default function Service2(props) {
         northwest essential herbs not oils teeth and plaque conspiracy and metallica"
       />
       <meta property="og:title" content="Put a blurb about rainier elixirs here" key="og:title" />
-      <meta property="og:url" content="rainierelixirs.com/service2" />
+      <meta property="og:url" key="og:url" content="rainierelixirs.com/service2" />
+      <link rel="canonical" key="canonical" href="rainierelixirs.com/service2" /> 
     </Head>
       <Grid
         item
@@ -76,7 +77,7 @@ export default function Service2(props) {
         </Hidden>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? "center" : undefined} variant="h2">
+            <Typography align={matchesMD ? "center" : undefined} variant="h1">
               Service 2
             </Typography>
           </Grid>
