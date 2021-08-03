@@ -341,9 +341,9 @@ export default function Herbz(props) {
         <Grid item lg style={{ alignSelf: "center" }}>
           <img
             src="/assets/herbs.svg"
-            width="100%"
+            width="100%" 
             alt="imagalt"
-            style={{ maxWidth: 1000 }}
+            style={{ maxWidth: 1000 }} //will need to adjust maxwidths as images change
           />
         </Grid>
       </Grid>

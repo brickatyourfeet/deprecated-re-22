@@ -60,7 +60,7 @@ export default function Footer(props) {
       <Hidden mdDown>
         <Grid container justifyContent="center" className={classes.mainContainer}>
           <Grid item className={classes.gridItem}>
-            <Grid container direction="column" spacing={2}>
+            <Grid container direction="column" spacing={2} style={{margin: 0}}>
               <Grid
                 item
                 component={Link}
@@ -73,7 +73,7 @@ export default function Footer(props) {
             </Grid>
           </Grid>
           <Grid item className={classes.gridItem}>
-            <Grid container direction="column" spacing={2}>
+            <Grid container direction="column" spacing={2} style={{margin: 0}}>
               <Grid
                 item
                 component={Link}
@@ -125,7 +125,7 @@ export default function Footer(props) {
             </Grid>
           </Grid>
           <Grid item className={classes.gridItem}>
-            <Grid container direction="column" spacing={2}>
+            <Grid container direction="column" spacing={2} style={{margin: 0}}>
               <Grid
                 item
                 component={Link}
@@ -165,7 +165,7 @@ export default function Footer(props) {
             </Grid>
           </Grid>
           <Grid item className={classes.gridItem}>
-            <Grid container direction="column" spacing={2}>
+            <Grid container direction="column" spacing={2} style={{margin: 0}}>
               <Grid
                 item
                 component={Link}
@@ -196,7 +196,7 @@ export default function Footer(props) {
             </Grid>
           </Grid>
           <Grid item className={classes.gridItem}>
-            <Grid container direction="column" spacing={2}>
+            <Grid container direction="column" spacing={2} style={{margin: 0}}>
               <Grid
                 item
                 component={Link}
@@ -222,6 +222,7 @@ export default function Footer(props) {
         justifyContent="flex-end"
         spacing={2}
         className={classes.socialContainer}
+        // style={{margin: 0}}
       >
         <Grid
           item
