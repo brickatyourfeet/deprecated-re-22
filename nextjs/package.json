@@ -17,7 +17,8 @@
     "next-optimized-images": "^2.6.2",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-juicer-feed": "0.0.2-alpha-4"
   },
   "scripts": {
     "dev": "next",
