@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {AppBar, Toolbar, useScrollTrigger, Hidden, Typography, SwipeableDrawer, Tabs, Tab, Button, Menu, MenuItem, useMediaQuery, IconButton, List, ListItem, ListItemText} from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/styles'
 import Link from "../Link";
-import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/icons/Menu';
 
 
 function ElevationScroll(props) {

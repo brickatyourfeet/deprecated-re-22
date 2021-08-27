@@ -16,9 +16,11 @@
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-juicer-feed": "0.0.2-alpha-4"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-juicer-feed": "0.0.2-alpha-4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "dev": "next",
